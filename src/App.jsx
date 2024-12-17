@@ -7,8 +7,10 @@ function App() {
 
   return (
     <Routes>
-      <Route path='/play' element={<PlayGame/>}/>
-      <Route path='/start' element={<StartGame/>}/>
+      {/* <Route path='/play/:text' element={<PlayGame/>}/> => this method is for Path params only. 
+      Query params and react-router-dom don't need this BS */}
+      <Route path='/play' element={<PlayGame/>} />
+      <Route path='/' element={<StartGame/>}/>
     </Routes>
   )
 }
